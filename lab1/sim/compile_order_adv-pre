@@ -1,0 +1,7 @@
+../src/mypackage.vhd
+../src/reg.vhd
+../src/fir_adv.vhd
+../tb/clk_gen.vhd
+../tb/data_maker_adv.vhd
+../tb/data_sink_adv.vhd
+../tb/tb_fir_adv.v
