@@ -51,6 +51,7 @@ read_samples:  process (CLK, RST_n)
     file fp_in : text open READ_MODE is "../matlab/samples.txt";
     variable line_in : line;
     variable x : integer;
+    variable toggle : std_logic := '0';
   begin  -- process
     if RST_n = '0' then                 -- asynchronous reset (active low)
       DOUT <= (others => '0') after tco;      
@@ -58,11 +59,16 @@ read_samples:  process (CLK, RST_n)
       sEndSim <= '0' after tco;
     elsif CLK'event and CLK = '1' then  -- rising clock edge
       if not endfile(fp_in) then
-        readline(fp_in, line_in);
-        read(line_in, x);
-        DOUT <= conv_std_logic_vector(x, nb) after tco;
-        VOUT <= '1' after tco;
-        sEndSim <= '0' after tco;
+	  toggle := not(toggle);
+	  if toggle = '1' then
+       		 readline(fp_in, line_in);
+	        read(line_in, x);
+        	DOUT <= conv_std_logic_vector(x, nb) after tco;
+	        VOUT <= '1' after tco;
+        	sEndSim <= '0' after tco;
+	  else
+	  	VOUT <= '0';
+	  end if;
       else
         VOUT <= '0' after tco;        
         sEndSim <= '1' after tco;
