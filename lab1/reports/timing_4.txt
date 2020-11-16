@@ -1,0 +1,105 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fir
+Version: O-2018.06-SP4
+Date   : Tue Nov 10 11:04:21 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: reg_i_5/D_OUT_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG_dout/D_OUT_reg[10]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_i_5/D_OUT_reg[1]/CK (DFFR_X1)                       0.00       0.00 r
+  reg_i_5/D_OUT_reg[1]/Q (DFFR_X1)                        0.18       0.18 r
+  reg_i_5/D_OUT[1] (reg_N11_4)                            0.00       0.18 r
+  mult_126_G7/a[1] (fir_DW_mult_tc_1)                     0.00       0.18 r
+  mult_126_G7/U480/Z (XOR2_X1)                            0.10       0.28 r
+  mult_126_G7/U299/ZN (INV_X1)                            0.06       0.35 f
+  mult_126_G7/U475/ZN (NAND2_X1)                          0.10       0.45 r
+  mult_126_G7/U355/ZN (OAI22_X1)                          0.06       0.50 f
+  mult_126_G7/U74/S (HA_X1)                               0.08       0.58 f
+  mult_126_G7/U472/ZN (AOI222_X1)                         0.11       0.69 r
+  mult_126_G7/U301/ZN (INV_X1)                            0.03       0.72 f
+  mult_126_G7/U471/ZN (AOI222_X1)                         0.09       0.82 r
+  mult_126_G7/U300/ZN (INV_X1)                            0.03       0.84 f
+  mult_126_G7/U470/ZN (AOI222_X1)                         0.09       0.94 r
+  mult_126_G7/U294/ZN (INV_X1)                            0.03       0.96 f
+  mult_126_G7/U469/ZN (AOI222_X1)                         0.09       1.06 r
+  mult_126_G7/U293/ZN (INV_X1)                            0.03       1.08 f
+  mult_126_G7/U468/ZN (AOI222_X1)                         0.09       1.18 r
+  mult_126_G7/U297/ZN (INV_X1)                            0.03       1.20 f
+  mult_126_G7/U467/ZN (AOI222_X1)                         0.09       1.30 r
+  mult_126_G7/U296/ZN (INV_X1)                            0.03       1.33 f
+  mult_126_G7/U466/ZN (AOI222_X1)                         0.09       1.42 r
+  mult_126_G7/U295/ZN (INV_X1)                            0.03       1.44 f
+  mult_126_G7/U14/CO (FA_X1)                              0.09       1.53 f
+  mult_126_G7/U13/CO (FA_X1)                              0.09       1.62 f
+  mult_126_G7/U12/CO (FA_X1)                              0.09       1.72 f
+  mult_126_G7/U11/CO (FA_X1)                              0.09       1.81 f
+  mult_126_G7/U10/CO (FA_X1)                              0.09       1.90 f
+  mult_126_G7/U9/CO (FA_X1)                               0.09       1.99 f
+  mult_126_G7/U8/CO (FA_X1)                               0.09       2.08 f
+  mult_126_G7/U7/CO (FA_X1)                               0.09       2.17 f
+  mult_126_G7/U6/CO (FA_X1)                               0.09       2.26 f
+  mult_126_G7/U5/CO (FA_X1)                               0.09       2.35 f
+  mult_126_G7/U326/Z (XOR2_X1)                            0.07       2.42 f
+  mult_126_G7/U325/Z (XOR2_X1)                            0.08       2.50 f
+  mult_126_G7/product[20] (fir_DW_mult_tc_1)              0.00       2.50 f
+  add_7_root_add_0_root_add_136_G9/B[10] (fir_DW01_add_6)
+                                                          0.00       2.50 f
+  add_7_root_add_0_root_add_136_G9/U1_10/S (FA_X1)        0.15       2.64 r
+  add_7_root_add_0_root_add_136_G9/SUM[10] (fir_DW01_add_6)
+                                                          0.00       2.64 r
+  add_2_root_add_0_root_add_136_G9/B[10] (fir_DW01_add_5)
+                                                          0.00       2.64 r
+  add_2_root_add_0_root_add_136_G9/U1_10/S (FA_X1)        0.12       2.77 f
+  add_2_root_add_0_root_add_136_G9/SUM[10] (fir_DW01_add_5)
+                                                          0.00       2.77 f
+  add_1_root_add_0_root_add_136_G9/B[10] (fir_DW01_add_1)
+                                                          0.00       2.77 f
+  add_1_root_add_0_root_add_136_G9/U1_10/S (FA_X1)        0.15       2.92 r
+  add_1_root_add_0_root_add_136_G9/SUM[10] (fir_DW01_add_1)
+                                                          0.00       2.92 r
+  add_0_root_add_0_root_add_136_G9/B[10] (fir_DW01_add_0)
+                                                          0.00       2.92 r
+  add_0_root_add_0_root_add_136_G9/U1_10/S (FA_X1)        0.12       3.03 f
+  add_0_root_add_0_root_add_136_G9/SUM[10] (fir_DW01_add_0)
+                                                          0.00       3.03 f
+  REG_dout/D_IN[10] (reg_N11_10)                          0.00       3.03 f
+  REG_dout/U3/ZN (NAND2_X1)                               0.03       3.06 r
+  REG_dout/U2/ZN (OAI21_X1)                               0.03       3.09 f
+  REG_dout/D_OUT_reg[10]/D (DFFR_X1)                      0.01       3.10 f
+  data arrival time                                                  3.10
+
+  clock MY_CLK (rise edge)                               10.09      10.09
+  clock network delay (ideal)                             0.00      10.09
+  clock uncertainty                                      -0.07      10.02
+  REG_dout/D_OUT_reg[10]/CK (DFFR_X1)                     0.00      10.02 r
+  library setup time                                     -0.04       9.98
+  data required time                                                 9.98
+  --------------------------------------------------------------------------
+  data required time                                                 9.98
+  data arrival time                                                 -3.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.88
+
+
+1

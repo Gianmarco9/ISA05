@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : fir
+Version: O-2018.06-SP4
+Date   : Tue Nov 10 11:08:14 2020
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fir                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 598.7687 uW   (59%)
+  Net Switching Power  = 420.8918 uW   (41%)
+                         ---------
+Total Dynamic Power    =   1.0197 mW  (100%)
+
+Cell Leakage Power     = 150.6645 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         198.4889           87.7878        2.2623e+04          308.8995  (  26.39%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    400.2806          333.1044        1.2804e+05          861.4263  (  73.61%)
+--------------------------------------------------------------------------------------------------
+Total            598.7695 uW       420.8922 uW     1.5066e+05 nW     1.1703e+03 uW
+1
