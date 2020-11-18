@@ -81,9 +81,9 @@ synth_clk.tcl:
 		
 synth*.tcl:
 	GOAL: This script analyzes first the vhd files specified into the respective analyze_order*.do
-		files, then elaborates the top entity and finally calls synth_clk.tcl giving a Null 
-		period clock to find the minimum period as the slack by synth_clk.tcl. This slack is 
-		saved into min_clk_period.txt file. Furthermore save the area and timing reports,
+		files, then elaborates the top entity and finally calls recursively synth_clk.tcl giving 
+		as initial value a Null clock period to find the minimum period as the slack by synth_clk.tcl. 
+		This slack is saved into min_clk_period.txt file. Furthermore save the area and timing reports,
 		writes the sdf, verilog backannotation and sdc file.
 		
 synth*_4.tcl: 
