@@ -10,10 +10,16 @@ source synth_clk.tcl
 puts "Computing worst negative slack -> CLK_PERIOD = 0.0"
 set slack [synth_clk 0.0]
 puts "Obtained slack: $slack"
-set value_clk [expr {-1*$slack}]
-puts "Minimum CLK_PERIOD = $value_clk"
-synth_clk $value_clk
+set value_clk 0
 
+while {$slack < 0} {
+	set value_clk [expr {$value_clk-1*$slack}]
+	puts "Creating a new clock = $value_clk"
+	set slack [synth_clk $value_clk]
+	puts "Obtained slack: $slack"
+}
+
+puts "Minimum CLK_PERIOD = $value_clk"
 set fid [open "min_clk_period.txt" w]
 puts $fid "$value_clk"
 close $fid

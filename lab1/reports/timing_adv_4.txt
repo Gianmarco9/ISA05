@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : fir_adv
 Version: O-2018.06-SP4
-Date   : Tue Nov 10 15:23:18 2020
+Date   : Wed Nov 18 12:27:20 2020
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
@@ -32,26 +32,26 @@ Wire Load Model Mode: top
   REG_din1/D_OUT[1] (reg_N11_48)                          0.00       0.10 r
   U6/Z (BUF_X1)                                           0.04       0.14 r
   mult_187_G2/a[1] (fir_adv_DW_mult_tc_31)                0.00       0.14 r
-  mult_187_G2/U307/Z (BUF_X1)                             0.11       0.25 r
+  mult_187_G2/U306/Z (BUF_X1)                             0.11       0.25 r
   mult_187_G2/U487/Z (XOR2_X1)                            0.10       0.36 r
-  mult_187_G2/U306/ZN (INV_X1)                            0.06       0.42 f
+  mult_187_G2/U305/ZN (INV_X1)                            0.06       0.42 f
   mult_187_G2/U482/ZN (NAND2_X1)                          0.10       0.52 r
   mult_187_G2/U362/ZN (OAI22_X1)                          0.06       0.57 f
   mult_187_G2/U74/S (HA_X1)                               0.08       0.65 f
   mult_187_G2/U479/ZN (AOI222_X1)                         0.11       0.77 r
-  mult_187_G2/U300/ZN (INV_X1)                            0.03       0.79 f
+  mult_187_G2/U299/ZN (INV_X1)                            0.03       0.79 f
   mult_187_G2/U478/ZN (AOI222_X1)                         0.09       0.89 r
-  mult_187_G2/U299/ZN (INV_X1)                            0.03       0.91 f
+  mult_187_G2/U298/ZN (INV_X1)                            0.03       0.91 f
   mult_187_G2/U477/ZN (AOI222_X1)                         0.09       1.01 r
-  mult_187_G2/U296/ZN (INV_X1)                            0.03       1.03 f
+  mult_187_G2/U295/ZN (INV_X1)                            0.03       1.03 f
   mult_187_G2/U476/ZN (AOI222_X1)                         0.09       1.13 r
-  mult_187_G2/U295/ZN (INV_X1)                            0.03       1.16 f
+  mult_187_G2/U294/ZN (INV_X1)                            0.03       1.16 f
   mult_187_G2/U475/ZN (AOI222_X1)                         0.09       1.25 r
-  mult_187_G2/U298/ZN (INV_X1)                            0.03       1.28 f
+  mult_187_G2/U297/ZN (INV_X1)                            0.03       1.28 f
   mult_187_G2/U474/ZN (AOI222_X1)                         0.09       1.37 r
-  mult_187_G2/U297/ZN (INV_X1)                            0.03       1.40 f
+  mult_187_G2/U296/ZN (INV_X1)                            0.03       1.40 f
   mult_187_G2/U473/ZN (AOI222_X1)                         0.09       1.49 r
-  mult_187_G2/U294/ZN (INV_X1)                            0.03       1.51 f
+  mult_187_G2/U293/ZN (INV_X1)                            0.03       1.51 f
   mult_187_G2/U14/CO (FA_X1)                              0.09       1.60 f
   mult_187_G2/U13/CO (FA_X1)                              0.09       1.70 f
   mult_187_G2/U12/CO (FA_X1)                              0.09       1.79 f
@@ -66,22 +66,22 @@ Wire Load Model Mode: top
   mult_187_G2/U332/Z (XOR2_X1)                            0.07       2.56 f
   mult_187_G2/product[20] (fir_adv_DW_mult_tc_31)         0.00       2.56 f
   pip1_i_1_0/D_IN[10] (reg_N11_20)                        0.00       2.56 f
-  pip1_i_1_0/U21/ZN (NAND2_X1)                            0.03       2.59 r
-  pip1_i_1_0/U20/ZN (OAI21_X1)                            0.03       2.62 f
+  pip1_i_1_0/U17/ZN (NAND2_X1)                            0.03       2.59 r
+  pip1_i_1_0/U16/ZN (OAI21_X1)                            0.03       2.62 f
   pip1_i_1_0/D_OUT_reg[10]/D (DFFR_X1)                    0.01       2.63 f
   data arrival time                                                  2.63
 
-  clock MY_CLK (rise edge)                                5.02       5.02
-  clock network delay (ideal)                             0.00       5.02
-  clock uncertainty                                      -0.07       4.95
-  pip1_i_1_0/D_OUT_reg[10]/CK (DFFR_X1)                   0.00       4.95 r
-  library setup time                                     -0.04       4.91
-  data required time                                                 4.91
+  clock MY_CLK (rise edge)                                7.20       7.20
+  clock network delay (ideal)                             0.00       7.20
+  clock uncertainty                                      -0.07       7.13
+  pip1_i_1_0/D_OUT_reg[10]/CK (DFFR_X1)                   0.00       7.13 r
+  library setup time                                     -0.04       7.08
+  data required time                                                 7.08
   --------------------------------------------------------------------------
-  data required time                                                 4.91
+  data required time                                                 7.08
   data arrival time                                                 -2.63
   --------------------------------------------------------------------------
-  slack (MET)                                                        2.28
+  slack (MET)                                                        4.45
 
 
 1
