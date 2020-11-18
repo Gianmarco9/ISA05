@@ -92,7 +92,7 @@ synth*_4.tcl:
 		period 4 times the one written into min_clk_period.txt. Furthermore save the area and 
 		timing reports, writes the sdf, verilog backannotation and sdc file.
 		
-power_analysis.tcl: 
+power_analysis*.tcl: 
 	GOAL: This script reads the verilog and saif file, then reports the related power.
 	
 analyze_order*.do:
