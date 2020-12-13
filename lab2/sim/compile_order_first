@@ -1,0 +1,15 @@
+../src/common/mypackage.vhd
+../src/common/reg.vhd
+../src/common/packfp.vhd
+../src/common/fpnormalize.vhd
+../src/common/fpround.vhd
+../src/common/unpackfp.vhd
+../src/multiplier/fpmul_stage1_struct.vhd
+../src/multiplier/fpmul_stage2_struct.vhd
+../src/multiplier/fpmul_stage3_struct.vhd
+../src/multiplier/fpmul_stage4_struct.vhd
+../src/multiplier/fpmul_pipeline.vhd
+../tb/clk_gen.vhd
+../tb/data_maker.vhd
+../tb/data_sink.vhd
+../tb/tb_FPmul.v
