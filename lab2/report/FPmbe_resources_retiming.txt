@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : resources
+Design : FPmbe
+Version: O-2018.06-SP4
+Date   : Mon Dec 14 14:05:03 2020
+****************************************
+
+Resource Sharing Report for design FPmbe in file
+        ../src/multiplier/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r360     | DW01_add     | width=8    |               | add_1_root_I2/add_117_2 |
+| r362     | DW01_add     | width=64   |               | I2/mbe_mul/add_114   |
+| r364     | DW01_add     | width=8    |               | I3/I9/add_41_aco     |
+| r366     | DW01_inc     | width=25   |               | I3/I11/add_45        |
+| r368     | DW01_add     | width=8    |               | I4/I1/add_41_aco     |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| I2/mbe_mul/add_114 | DW01_add         | pparch (area,speed)                 |
+| I3/I11/add_45      | DW01_inc         | pparch (area,speed)                 |
+| add_1_root_I2/add_117_2               |                    |                |
+|                    | DW01_add         | rpl                |                |
+===============================================================================
+
+1
