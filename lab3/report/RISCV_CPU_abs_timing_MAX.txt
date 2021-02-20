@@ -1,0 +1,191 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV_CPU_abs
+Version: O-2018.06-SP4
+Date   : Fri Jan 15 01:01:05 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: data_path/reg_RD_E_M/D_OUT_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: control_unit/cw_E_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_CPU_abs      5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  data_path/reg_RD_E_M/D_OUT_reg[0]/CK (DFFR_X1)          0.00       0.00 r
+  data_path/reg_RD_E_M/D_OUT_reg[0]/Q (DFFR_X1)           0.09       0.09 f
+  U4753/ZN (XNOR2_X1)                                     0.05       0.14 f
+  U8957/ZN (NOR3_X1)                                      0.07       0.21 r
+  U8968/ZN (AOI21_X1)                                     0.03       0.24 f
+  U4669/ZN (NAND3_X1)                                     0.03       0.27 r
+  U8956/ZN (NOR2_X1)                                      0.03       0.30 f
+  U8992/ZN (AOI22_X1)                                     0.06       0.36 r
+  U9002/ZN (OAI221_X1)                                    0.05       0.41 f
+  data_path/execute_stage/alu_exec/add_27/B[0] (RISCV_CPU_abs_DW01_add_0)
+                                                          0.00       0.41 f
+  data_path/execute_stage/alu_exec/add_27/U259/ZN (AND2_X1)
+                                                          0.05       0.46 f
+  data_path/execute_stage/alu_exec/add_27/U77/ZN (NAND2_X1)
+                                                          0.04       0.50 r
+  data_path/execute_stage/alu_exec/add_27/U78/ZN (NAND3_X1)
+                                                          0.04       0.54 f
+  data_path/execute_stage/alu_exec/add_27/U225/ZN (NAND2_X1)
+                                                          0.04       0.58 r
+  data_path/execute_stage/alu_exec/add_27/U226/ZN (NAND3_X1)
+                                                          0.04       0.61 f
+  data_path/execute_stage/alu_exec/add_27/U231/ZN (NAND2_X1)
+                                                          0.03       0.65 r
+  data_path/execute_stage/alu_exec/add_27/U40/ZN (NAND3_X1)
+                                                          0.04       0.69 f
+  data_path/execute_stage/alu_exec/add_27/U88/ZN (NAND2_X1)
+                                                          0.04       0.72 r
+  data_path/execute_stage/alu_exec/add_27/U45/ZN (NAND3_X1)
+                                                          0.04       0.76 f
+  data_path/execute_stage/alu_exec/add_27/U161/ZN (NAND2_X1)
+                                                          0.04       0.80 r
+  data_path/execute_stage/alu_exec/add_27/U64/ZN (NAND3_X1)
+                                                          0.04       0.84 f
+  data_path/execute_stage/alu_exec/add_27/U133/ZN (NAND2_X1)
+                                                          0.04       0.87 r
+  data_path/execute_stage/alu_exec/add_27/U108/ZN (NAND3_X1)
+                                                          0.04       0.91 f
+  data_path/execute_stage/alu_exec/add_27/U149/ZN (NAND2_X1)
+                                                          0.04       0.94 r
+  data_path/execute_stage/alu_exec/add_27/U143/ZN (NAND3_X1)
+                                                          0.04       0.98 f
+  data_path/execute_stage/alu_exec/add_27/U193/ZN (NAND2_X1)
+                                                          0.04       1.02 r
+  data_path/execute_stage/alu_exec/add_27/U6/ZN (NAND3_X1)
+                                                          0.04       1.06 f
+  data_path/execute_stage/alu_exec/add_27/U25/ZN (NAND2_X1)
+                                                          0.03       1.09 r
+  data_path/execute_stage/alu_exec/add_27/U8/ZN (NAND3_X1)
+                                                          0.04       1.13 f
+  data_path/execute_stage/alu_exec/add_27/U241/ZN (NAND2_X1)
+                                                          0.04       1.17 r
+  data_path/execute_stage/alu_exec/add_27/U244/ZN (NAND3_X1)
+                                                          0.04       1.21 f
+  data_path/execute_stage/alu_exec/add_27/U254/ZN (NAND2_X1)
+                                                          0.03       1.24 r
+  data_path/execute_stage/alu_exec/add_27/U257/ZN (NAND3_X1)
+                                                          0.04       1.28 f
+  data_path/execute_stage/alu_exec/add_27/U181/ZN (NAND2_X1)
+                                                          0.03       1.31 r
+  data_path/execute_stage/alu_exec/add_27/U183/ZN (NAND3_X1)
+                                                          0.04       1.35 f
+  data_path/execute_stage/alu_exec/add_27/U14/ZN (NAND2_X1)
+                                                          0.04       1.39 r
+  data_path/execute_stage/alu_exec/add_27/U1/ZN (NAND3_X1)
+                                                          0.04       1.43 f
+  data_path/execute_stage/alu_exec/add_27/U209/ZN (NAND2_X1)
+                                                          0.04       1.47 r
+  data_path/execute_stage/alu_exec/add_27/U42/ZN (NAND3_X1)
+                                                          0.04       1.50 f
+  data_path/execute_stage/alu_exec/add_27/U217/ZN (NAND2_X1)
+                                                          0.04       1.54 r
+  data_path/execute_stage/alu_exec/add_27/U220/ZN (NAND3_X1)
+                                                          0.04       1.58 f
+  data_path/execute_stage/alu_exec/add_27/U96/ZN (NAND2_X1)
+                                                          0.03       1.61 r
+  data_path/execute_stage/alu_exec/add_27/U44/ZN (NAND3_X1)
+                                                          0.04       1.65 f
+  data_path/execute_stage/alu_exec/add_27/U119/ZN (NAND2_X1)
+                                                          0.04       1.69 r
+  data_path/execute_stage/alu_exec/add_27/U122/ZN (NAND3_X1)
+                                                          0.04       1.73 f
+  data_path/execute_stage/alu_exec/add_27/U125/ZN (NAND2_X1)
+                                                          0.03       1.76 r
+  data_path/execute_stage/alu_exec/add_27/U128/ZN (NAND3_X1)
+                                                          0.04       1.80 f
+  data_path/execute_stage/alu_exec/add_27/U20/ZN (NAND2_X1)
+                                                          0.04       1.84 r
+  data_path/execute_stage/alu_exec/add_27/U22/ZN (NAND3_X1)
+                                                          0.04       1.88 f
+  data_path/execute_stage/alu_exec/add_27/U187/ZN (NAND2_X1)
+                                                          0.04       1.91 r
+  data_path/execute_stage/alu_exec/add_27/U46/ZN (NAND3_X1)
+                                                          0.04       1.95 f
+  data_path/execute_stage/alu_exec/add_27/U81/ZN (NAND2_X1)
+                                                          0.04       1.99 r
+  data_path/execute_stage/alu_exec/add_27/U39/ZN (NAND3_X1)
+                                                          0.04       2.02 f
+  data_path/execute_stage/alu_exec/add_27/U138/ZN (NAND2_X1)
+                                                          0.04       2.06 r
+  data_path/execute_stage/alu_exec/add_27/U141/ZN (NAND3_X1)
+                                                          0.04       2.10 f
+  data_path/execute_stage/alu_exec/add_27/U204/ZN (NAND2_X1)
+                                                          0.04       2.13 r
+  data_path/execute_stage/alu_exec/add_27/U206/ZN (NAND3_X1)
+                                                          0.04       2.17 f
+  data_path/execute_stage/alu_exec/add_27/U155/ZN (NAND2_X1)
+                                                          0.04       2.21 r
+  data_path/execute_stage/alu_exec/add_27/U157/ZN (NAND3_X1)
+                                                          0.04       2.25 f
+  data_path/execute_stage/alu_exec/add_27/U236/ZN (NAND2_X1)
+                                                          0.04       2.29 r
+  data_path/execute_stage/alu_exec/add_27/U32/ZN (NAND3_X1)
+                                                          0.04       2.32 f
+  data_path/execute_stage/alu_exec/add_27/U248/ZN (NAND2_X1)
+                                                          0.04       2.36 r
+  data_path/execute_stage/alu_exec/add_27/U251/ZN (NAND3_X1)
+                                                          0.05       2.40 f
+  data_path/execute_stage/alu_exec/add_27/U30/ZN (NAND2_X1)
+                                                          0.04       2.44 r
+  data_path/execute_stage/alu_exec/add_27/U104/ZN (NAND3_X1)
+                                                          0.04       2.48 f
+  data_path/execute_stage/alu_exec/add_27/U174/ZN (NAND2_X1)
+                                                          0.03       2.51 r
+  data_path/execute_stage/alu_exec/add_27/U177/ZN (NAND3_X1)
+                                                          0.04       2.55 f
+  data_path/execute_stage/alu_exec/add_27/U113/ZN (NAND2_X1)
+                                                          0.04       2.59 r
+  data_path/execute_stage/alu_exec/add_27/U103/ZN (NAND3_X1)
+                                                          0.04       2.63 f
+  data_path/execute_stage/alu_exec/add_27/U199/ZN (NAND2_X1)
+                                                          0.03       2.66 r
+  data_path/execute_stage/alu_exec/add_27/U62/ZN (NAND3_X1)
+                                                          0.04       2.70 f
+  data_path/execute_stage/alu_exec/add_27/U61/ZN (XNOR2_X1)
+                                                          0.06       2.75 f
+  data_path/execute_stage/alu_exec/add_27/SUM[31] (RISCV_CPU_abs_DW01_add_0)
+                                                          0.00       2.75 f
+  U4693/ZN (NOR2_X1)                                      0.05       2.80 r
+  U9018/ZN (OAI22_X1)                                     0.03       2.83 f
+  U4640/ZN (OR2_X1)                                       0.06       2.90 f
+  U4678/ZN (OAI211_X1)                                    0.06       2.96 r
+  U4686/ZN (NOR2_X1)                                      0.03       2.99 f
+  U9009/ZN (AOI21_X1)                                     0.05       3.05 r
+  U4740/ZN (AND3_X1)                                      0.05       3.10 r
+  U8991/ZN (NAND2_X1)                                     0.03       3.12 f
+  control_unit/cw_E_reg[7]/D (DFFR_X1)                    0.01       3.13 f
+  data arrival time                                                  3.13
+
+  clock MY_CLK (rise edge)                                3.26       3.26
+  clock network delay (ideal)                             0.00       3.26
+  clock uncertainty                                      -0.07       3.19
+  control_unit/cw_E_reg[7]/CK (DFFR_X1)                   0.00       3.19 r
+  library setup time                                     -0.04       3.15
+  data required time                                                 3.15
+  --------------------------------------------------------------------------
+  data required time                                                 3.15
+  data arrival time                                                 -3.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

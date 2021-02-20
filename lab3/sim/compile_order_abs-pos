@@ -1,0 +1,6 @@
+../src/common/mypackage.vhd
+../netlist/RISCV_CPU_abs.v
+../tb/IRAM.vhd
+../tb/DRAM.vhd
+../tb/clk_RISCV_abs.vhd
+../tb/tb_RISCV_CPU_abs.v

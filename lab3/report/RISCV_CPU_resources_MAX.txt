@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : resources
+Design : RISCV_CPU
+Version: O-2018.06-SP4
+Date   : Thu Jan 14 18:31:08 2021
+****************************************
+
+Resource Sharing Report for design RISCV_CPU in file ../src/CU.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r363     | DW_cmp       | width=5    |               | control_unit/eq_342_2 |
+          |              |            |               | control_unit/eq_347_3 |
+| r366     | DW_cmp       | width=5    |               | control_unit/eq_356_2 |
+          |              |            |               | control_unit/eq_361_3 |
+| r384     | DW_cmp       | width=5    |               | control_unit/eq_285  |
+| r386     | DW_cmp       | width=5    |               | control_unit/eq_285_2 |
+| r388     | DW_cmp       | width=5    |               | control_unit/eq_339_2 |
+| r390     | DW_cmp       | width=5    |               | control_unit/ne_341_2 |
+| r392     | DW_cmp       | width=5    |               | control_unit/eq_353_2 |
+| r394     | DW_cmp       | width=5    |               | control_unit/ne_355_2 |
+| r396     | DW01_add     | width=32   |               | data_path/fetch_stage/ADD/add_16 |
+| r398     | DW01_add     | width=32   |               | data_path/execute_stage/addr_add/add_16 |
+| r400     | DW01_add     | width=32   |               | data_path/execute_stage/alu_exec/add_27 |
+| r402     | DW_sra       | A_width=32 |               | data_path/execute_stage/alu_exec/sra_31 |
+       |            |               |                      |
+|          |              | SH_width=31 |              |                      |
+| r404     | DW_cmp       | width=32   |               | data_path/execute_stage/alu_exec/lt_32 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| data_path/fetch_stage/ADD/add_16      |                    |                |
+|                    | DW01_add         | rpl                |                |
+| data_path/execute_stage/addr_add/add_16                    |                |
+|                    | DW01_add         | rpl                |                |
+| data_path/execute_stage/alu_exec/add_27                    |                |
+|                    | DW01_add         | rpl                |                |
+| data_path/execute_stage/alu_exec/lt_32                     |                |
+|                    | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+1

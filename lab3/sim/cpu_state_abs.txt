@@ -1,0 +1,1930 @@
+CYCLE No:			1
+	- fetch stage instr:
+		PC:            00000000
+	- decode stage instr:	NOP
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000000
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	null
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	null
+		WR:            0
+		RD_ADDR:       0
+		WR_DATA:       00000000
+
+
+CYCLE No:			2
+	- fetch stage instr:
+		PC:            00000000
+	- decode stage instr:	NOP
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000000
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	null
+		WR:            0
+		RD_ADDR:       0
+		WR_DATA:       00000000
+
+
+CYCLE No:			3
+	- fetch stage instr:
+		PC:            00000004
+	- decode stage instr:	ADDI x16, x0, 0x00000007
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000000
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       0
+		WR_DATA:       00000000
+
+
+CYCLE No:			4
+	- fetch stage instr:
+		PC:            00000008
+	- decode stage instr:	AUIPC x4, 0x00002000
+	- execute stage instr:	ADDI x16, x0, 0x00000007
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000007
+		ALU_RES:       00000007
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       0
+		WR_DATA:       00000000
+
+
+CYCLE No:			5
+	- fetch stage instr:
+		PC:            0000000C
+	- decode stage instr:	ADDI x4, x4, 0xFFFFFFFC
+	- execute stage instr:	AUIPC x4, 0x00002000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00002004
+		ALU_RES:       00002000
+		ABS_RES:       00000000
+	- mem stage instr:	ADDI x16, x0, 0x00000007
+		ADDR_MEM:      00000007
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       0
+		WR_DATA:       00000000
+
+
+CYCLE No:			6
+	- fetch stage instr:
+		PC:            00000010
+	- decode stage instr:	AUIPC x5, 0x00002000
+	- execute stage instr:	ADDI x4, x4, 0xFFFFFFFC
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000004
+		ALU_RES:       00002000
+		ABS_RES:       00002004
+	- mem stage instr:	AUIPC x4, 0x00002000
+		ADDR_MEM:      00002000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	ADDI x16, x0, 0x00000007
+		WR:            1
+		RD_ADDR:       16
+		WR_DATA:       00000007
+
+
+CYCLE No:			7
+	- fetch stage instr:
+		PC:            00000014
+	- decode stage instr:	ADDI x5, x5, 0x00000010
+	- execute stage instr:	AUIPC x5, 0x00002000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000200C
+		ALU_RES:       00002000
+		ABS_RES:       00000000
+	- mem stage instr:	ADDI x4, x4, 0xFFFFFFFC
+		ADDR_MEM:      00002000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	AUIPC x4, 0x00002000
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       00002004
+
+
+CYCLE No:			8
+	- fetch stage instr:
+		PC:            00000018
+	- decode stage instr:	LUI x13, 0x40000000
+	- execute stage instr:	ADDI x5, x5, 0x00000010
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       0000201C
+		ABS_RES:       0000200C
+	- mem stage instr:	AUIPC x5, 0x00002000
+		ADDR_MEM:      00002000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	ADDI x4, x4, 0xFFFFFFFC
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       00002000
+
+
+CYCLE No:			9
+	- fetch stage instr:
+		PC:            0000001C
+	- decode stage instr:	ADDI x13, x13, 0xFFFFFFFF
+	- execute stage instr:	LUI x13, 0x40000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      40000014
+		ALU_RES:       40000000
+		ABS_RES:       00000000
+	- mem stage instr:	ADDI x5, x5, 0x00000010
+		ADDR_MEM:      0000201C
+		DATA_W_MEM:    00000007
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	AUIPC x5, 0x00002000
+		WR:            1
+		RD_ADDR:       5
+		WR_DATA:       0000200C
+
+
+CYCLE No:			10
+	- fetch stage instr:
+		PC:            00000020
+	- decode stage instr:	BEQ x16, x0, 0x00000024
+	- execute stage instr:	ADDI x13, x13, 0xFFFFFFFF
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000017
+		ALU_RES:       3FFFFFFF
+		ABS_RES:       40000000
+	- mem stage instr:	LUI x13, 0x40000000
+		ADDR_MEM:      40000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	ADDI x5, x5, 0x00000010
+		WR:            1
+		RD_ADDR:       5
+		WR_DATA:       0000201C
+
+
+CYCLE No:			11
+	- fetch stage instr:
+		PC:            00000024
+	- decode stage instr:	LW x8, x4, 0x00000000
+	- execute stage instr:	BEQ x16, x0, 0x00000024
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       00000007
+		ABS_RES:       00000007
+	- mem stage instr:	ADDI x13, x13, 0xFFFFFFFF
+		ADDR_MEM:      3FFFFFFF
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	LUI x13, 0x40000000
+		WR:            1
+		RD_ADDR:       13
+		WR_DATA:       40000000
+
+
+CYCLE No:			12
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	LW x8, x4, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       00002000
+		ABS_RES:       00002000
+	- mem stage instr:	BEQ x16, x0, 0x00000024
+		ADDR_MEM:      00000007
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000000
+	- wrback stage instr:	ADDI x13, x13, 0xFFFFFFFF
+		WR:            1
+		RD_ADDR:       13
+		WR_DATA:       3FFFFFFF
+
+
+CYCLE No:			13
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       00002000
+		ABS_RES:       00002000
+	- mem stage instr:	LW x8, x4, 0x00000000
+		ADDR_MEM:      00002000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	BEQ x16, x0, 0x00000024
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000007
+
+
+CYCLE No:			14
+	- fetch stage instr:
+		PC:            0000002C
+	- decode stage instr:	ADDI x4, x4, 0x00000004
+	- execute stage instr:	ABS x10, x8
+		NOP_inj:       0
+		ALU_FORW1:     2
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       0000000A
+		ABS_RES:       0000000A
+	- mem stage instr:	NOP
+		ADDR_MEM:      00002000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	LW x8, x4, 0x00000000
+		WR:            1
+		RD_ADDR:       8
+		WR_DATA:       0000000A
+
+
+CYCLE No:			15
+	- fetch stage instr:
+		PC:            00000030
+	- decode stage instr:	ADDI x16, x16, 0xFFFFFFFF
+	- execute stage instr:	ADDI x4, x4, 0x00000004
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002C
+		ALU_RES:       00002004
+		ABS_RES:       00002000
+	- mem stage instr:	ABS x10, x8
+		ADDR_MEM:      0000000A
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       8
+		WR_DATA:       00000024
+
+
+CYCLE No:			16
+	- fetch stage instr:
+		PC:            00000034
+	- decode stage instr:	SLT x11, x10, x13
+	- execute stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002B
+		ALU_RES:       00000006
+		ABS_RES:       00000007
+	- mem stage instr:	ADDI x4, x4, 0x00000004
+		ADDR_MEM:      00002004
+		DATA_W_MEM:    00002000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	ABS x10, x8
+		WR:            1
+		RD_ADDR:       10
+		WR_DATA:       0000000A
+
+
+CYCLE No:			17
+	- fetch stage instr:
+		PC:            00000038
+	- decode stage instr:	BEQ x11, x0, 0xFFFFFFE8
+	- execute stage instr:	SLT x11, x10, x13
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000030
+		ALU_RES:       00000001
+		ABS_RES:       0000000A
+	- mem stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		ADDR_MEM:      00000006
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	ADDI x4, x4, 0x00000004
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       00002004
+
+
+CYCLE No:			18
+	- fetch stage instr:
+		PC:            0000003C
+	- decode stage instr:	ADD x13, x10, x0
+	- execute stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000001
+		ABS_RES:       00000001
+	- mem stage instr:	SLT x11, x10, x13
+		ADDR_MEM:      00000001
+		DATA_W_MEM:    3FFFFFFF
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		WR:            1
+		RD_ADDR:       16
+		WR_DATA:       00000006
+
+
+CYCLE No:			19
+	- fetch stage instr:
+		PC:            00000040
+	- decode stage instr:	JAL x1, 0xFFFFFFE0
+	- execute stage instr:	ADD x13, x10, x0
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000038
+		ALU_RES:       0000000A
+		ABS_RES:       0000000A
+	- mem stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		ADDR_MEM:      00000001
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	SLT x11, x10, x13
+		WR:            1
+		RD_ADDR:       11
+		WR_DATA:       00000001
+
+
+CYCLE No:			20
+	- fetch stage instr:
+		PC:            00000044
+	- decode stage instr:	SW x5, 0x00000000(x13)
+	- execute stage instr:	JAL x1, 0xFFFFFFE0
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       FFFFFFE0
+		ABS_RES:       00000000
+	- mem stage instr:	ADD x13, x10, x0
+		ADDR_MEM:      0000000A
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000001
+
+
+CYCLE No:			21
+	- fetch stage instr:
+		PC:            0000001C
+	- decode stage instr:	JAL x1, 0x00000000
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     2
+		NEW_ADDR:      00000040
+		ALU_RES:       00002026
+		ABS_RES:       0000201C
+	- mem stage instr:	JAL x1, 0xFFFFFFE0
+		ADDR_MEM:      FFFFFFE0
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	ADD x13, x10, x0
+		WR:            1
+		RD_ADDR:       13
+		WR_DATA:       0000000A
+
+
+CYCLE No:			22
+	- fetch stage instr:
+		PC:            00000020
+	- decode stage instr:	BEQ x16, x0, 0x00000024
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000044
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      FFFFFFE0
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	JAL x1, 0xFFFFFFE0
+		WR:            1
+		RD_ADDR:       1
+		WR_DATA:       00000040
+
+
+CYCLE No:			23
+	- fetch stage instr:
+		PC:            00000024
+	- decode stage instr:	LW x8, x4, 0x00000000
+	- execute stage instr:	BEQ x16, x0, 0x00000024
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       00000006
+		ABS_RES:       00000006
+	- mem stage instr:	NOP
+		ADDR_MEM:      FFFFFFE0
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       1
+		WR_DATA:       00000040
+
+
+CYCLE No:			24
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	LW x8, x4, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       00002004
+		ABS_RES:       00002004
+	- mem stage instr:	BEQ x16, x0, 0x00000024
+		ADDR_MEM:      00000006
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000A
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       1
+		WR_DATA:       00000040
+
+
+CYCLE No:			25
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       00002004
+		ABS_RES:       00002004
+	- mem stage instr:	LW x8, x4, 0x00000000
+		ADDR_MEM:      00002004
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	BEQ x16, x0, 0x00000024
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000006
+
+
+CYCLE No:			26
+	- fetch stage instr:
+		PC:            0000002C
+	- decode stage instr:	ADDI x4, x4, 0x00000004
+	- execute stage instr:	ABS x10, x8
+		NOP_inj:       0
+		ALU_FORW1:     2
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       FFFFFFD1
+		ABS_RES:       0000002F
+	- mem stage instr:	NOP
+		ADDR_MEM:      00002004
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	LW x8, x4, 0x00000000
+		WR:            1
+		RD_ADDR:       8
+		WR_DATA:       FFFFFFD1
+
+
+CYCLE No:			27
+	- fetch stage instr:
+		PC:            00000030
+	- decode stage instr:	ADDI x16, x16, 0xFFFFFFFF
+	- execute stage instr:	ADDI x4, x4, 0x00000004
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002C
+		ALU_RES:       00002008
+		ABS_RES:       00002004
+	- mem stage instr:	ABS x10, x8
+		ADDR_MEM:      FFFFFFD1
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       8
+		WR_DATA:       00000024
+
+
+CYCLE No:			28
+	- fetch stage instr:
+		PC:            00000034
+	- decode stage instr:	SLT x11, x10, x13
+	- execute stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002B
+		ALU_RES:       00000005
+		ABS_RES:       00000006
+	- mem stage instr:	ADDI x4, x4, 0x00000004
+		ADDR_MEM:      00002008
+		DATA_W_MEM:    00002004
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	ABS x10, x8
+		WR:            1
+		RD_ADDR:       10
+		WR_DATA:       0000002F
+
+
+CYCLE No:			29
+	- fetch stage instr:
+		PC:            00000038
+	- decode stage instr:	BEQ x11, x0, 0xFFFFFFE8
+	- execute stage instr:	SLT x11, x10, x13
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000030
+		ALU_RES:       00000000
+		ABS_RES:       0000002F
+	- mem stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		ADDR_MEM:      00000005
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	ADDI x4, x4, 0x00000004
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       00002008
+
+
+CYCLE No:			30
+	- fetch stage instr:
+		PC:            0000003C
+	- decode stage instr:	ADD x13, x10, x0
+	- execute stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	SLT x11, x10, x13
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    0000000A
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		WR:            1
+		RD_ADDR:       16
+		WR_DATA:       00000005
+
+
+CYCLE No:			31
+	- fetch stage instr:
+		PC:            0000001C
+	- decode stage instr:	JAL x1, 0xFFFFFFE0
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000038
+		ALU_RES:       0000002F
+		ABS_RES:       0000002F
+	- mem stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	SLT x11, x10, x13
+		WR:            1
+		RD_ADDR:       11
+		WR_DATA:       00000000
+
+
+CYCLE No:			32
+	- fetch stage instr:
+		PC:            00000020
+	- decode stage instr:	BEQ x16, x0, 0x00000024
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000040
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000000
+
+
+CYCLE No:			33
+	- fetch stage instr:
+		PC:            00000024
+	- decode stage instr:	LW x8, x4, 0x00000000
+	- execute stage instr:	BEQ x16, x0, 0x00000024
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       00000005
+		ABS_RES:       00000005
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			34
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	LW x8, x4, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       00002008
+		ABS_RES:       00002008
+	- mem stage instr:	BEQ x16, x0, 0x00000024
+		ADDR_MEM:      00000005
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFD1
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			35
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       00002008
+		ABS_RES:       00002008
+	- mem stage instr:	LW x8, x4, 0x00000000
+		ADDR_MEM:      00002008
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	BEQ x16, x0, 0x00000024
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000005
+
+
+CYCLE No:			36
+	- fetch stage instr:
+		PC:            0000002C
+	- decode stage instr:	ADDI x4, x4, 0x00000004
+	- execute stage instr:	ABS x10, x8
+		NOP_inj:       0
+		ALU_FORW1:     2
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       00000016
+		ABS_RES:       00000016
+	- mem stage instr:	NOP
+		ADDR_MEM:      00002008
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	LW x8, x4, 0x00000000
+		WR:            1
+		RD_ADDR:       8
+		WR_DATA:       00000016
+
+
+CYCLE No:			37
+	- fetch stage instr:
+		PC:            00000030
+	- decode stage instr:	ADDI x16, x16, 0xFFFFFFFF
+	- execute stage instr:	ADDI x4, x4, 0x00000004
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002C
+		ALU_RES:       0000200C
+		ABS_RES:       00002008
+	- mem stage instr:	ABS x10, x8
+		ADDR_MEM:      00000016
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       8
+		WR_DATA:       00000024
+
+
+CYCLE No:			38
+	- fetch stage instr:
+		PC:            00000034
+	- decode stage instr:	SLT x11, x10, x13
+	- execute stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002B
+		ALU_RES:       00000004
+		ABS_RES:       00000005
+	- mem stage instr:	ADDI x4, x4, 0x00000004
+		ADDR_MEM:      0000200C
+		DATA_W_MEM:    00002008
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	ABS x10, x8
+		WR:            1
+		RD_ADDR:       10
+		WR_DATA:       00000016
+
+
+CYCLE No:			39
+	- fetch stage instr:
+		PC:            00000038
+	- decode stage instr:	BEQ x11, x0, 0xFFFFFFE8
+	- execute stage instr:	SLT x11, x10, x13
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000030
+		ALU_RES:       00000000
+		ABS_RES:       00000016
+	- mem stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		ADDR_MEM:      00000004
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	ADDI x4, x4, 0x00000004
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       0000200C
+
+
+CYCLE No:			40
+	- fetch stage instr:
+		PC:            0000003C
+	- decode stage instr:	ADD x13, x10, x0
+	- execute stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	SLT x11, x10, x13
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    0000000A
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		WR:            1
+		RD_ADDR:       16
+		WR_DATA:       00000004
+
+
+CYCLE No:			41
+	- fetch stage instr:
+		PC:            0000001C
+	- decode stage instr:	JAL x1, 0xFFFFFFE0
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000038
+		ALU_RES:       00000016
+		ABS_RES:       00000016
+	- mem stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	SLT x11, x10, x13
+		WR:            1
+		RD_ADDR:       11
+		WR_DATA:       00000000
+
+
+CYCLE No:			42
+	- fetch stage instr:
+		PC:            00000020
+	- decode stage instr:	BEQ x16, x0, 0x00000024
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000040
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000000
+
+
+CYCLE No:			43
+	- fetch stage instr:
+		PC:            00000024
+	- decode stage instr:	LW x8, x4, 0x00000000
+	- execute stage instr:	BEQ x16, x0, 0x00000024
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       00000004
+		ABS_RES:       00000004
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			44
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	LW x8, x4, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       0000200C
+		ABS_RES:       0000200C
+	- mem stage instr:	BEQ x16, x0, 0x00000024
+		ADDR_MEM:      00000004
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    00000016
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			45
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       0000200C
+		ABS_RES:       0000200C
+	- mem stage instr:	LW x8, x4, 0x00000000
+		ADDR_MEM:      0000200C
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	BEQ x16, x0, 0x00000024
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000004
+
+
+CYCLE No:			46
+	- fetch stage instr:
+		PC:            0000002C
+	- decode stage instr:	ADDI x4, x4, 0x00000004
+	- execute stage instr:	ABS x10, x8
+		NOP_inj:       0
+		ALU_FORW1:     2
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       FFFFFFFD
+		ABS_RES:       00000003
+	- mem stage instr:	NOP
+		ADDR_MEM:      0000200C
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	LW x8, x4, 0x00000000
+		WR:            1
+		RD_ADDR:       8
+		WR_DATA:       FFFFFFFD
+
+
+CYCLE No:			47
+	- fetch stage instr:
+		PC:            00000030
+	- decode stage instr:	ADDI x16, x16, 0xFFFFFFFF
+	- execute stage instr:	ADDI x4, x4, 0x00000004
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002C
+		ALU_RES:       00002010
+		ABS_RES:       0000200C
+	- mem stage instr:	ABS x10, x8
+		ADDR_MEM:      FFFFFFFD
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       8
+		WR_DATA:       00000024
+
+
+CYCLE No:			48
+	- fetch stage instr:
+		PC:            00000034
+	- decode stage instr:	SLT x11, x10, x13
+	- execute stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002B
+		ALU_RES:       00000003
+		ABS_RES:       00000004
+	- mem stage instr:	ADDI x4, x4, 0x00000004
+		ADDR_MEM:      00002010
+		DATA_W_MEM:    0000200C
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	ABS x10, x8
+		WR:            1
+		RD_ADDR:       10
+		WR_DATA:       00000003
+
+
+CYCLE No:			49
+	- fetch stage instr:
+		PC:            00000038
+	- decode stage instr:	BEQ x11, x0, 0xFFFFFFE8
+	- execute stage instr:	SLT x11, x10, x13
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000030
+		ALU_RES:       00000001
+		ABS_RES:       00000003
+	- mem stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		ADDR_MEM:      00000003
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	ADDI x4, x4, 0x00000004
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       00002010
+
+
+CYCLE No:			50
+	- fetch stage instr:
+		PC:            0000003C
+	- decode stage instr:	ADD x13, x10, x0
+	- execute stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000001
+		ABS_RES:       00000001
+	- mem stage instr:	SLT x11, x10, x13
+		ADDR_MEM:      00000001
+		DATA_W_MEM:    0000000A
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		WR:            1
+		RD_ADDR:       16
+		WR_DATA:       00000003
+
+
+CYCLE No:			51
+	- fetch stage instr:
+		PC:            00000040
+	- decode stage instr:	JAL x1, 0xFFFFFFE0
+	- execute stage instr:	ADD x13, x10, x0
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000038
+		ALU_RES:       00000003
+		ABS_RES:       00000003
+	- mem stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		ADDR_MEM:      00000001
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	SLT x11, x10, x13
+		WR:            1
+		RD_ADDR:       11
+		WR_DATA:       00000001
+
+
+CYCLE No:			52
+	- fetch stage instr:
+		PC:            00000044
+	- decode stage instr:	SW x5, 0x00000000(x13)
+	- execute stage instr:	JAL x1, 0xFFFFFFE0
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       FFFFFFE0
+		ABS_RES:       00000000
+	- mem stage instr:	ADD x13, x10, x0
+		ADDR_MEM:      00000003
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000001
+
+
+CYCLE No:			53
+	- fetch stage instr:
+		PC:            0000001C
+	- decode stage instr:	JAL x1, 0x00000000
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     2
+		NEW_ADDR:      00000040
+		ALU_RES:       0000201F
+		ABS_RES:       0000201C
+	- mem stage instr:	JAL x1, 0xFFFFFFE0
+		ADDR_MEM:      FFFFFFE0
+		DATA_W_MEM:    00000040
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	ADD x13, x10, x0
+		WR:            1
+		RD_ADDR:       13
+		WR_DATA:       00000003
+
+
+CYCLE No:			54
+	- fetch stage instr:
+		PC:            00000020
+	- decode stage instr:	BEQ x16, x0, 0x00000024
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000044
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      FFFFFFE0
+		DATA_W_MEM:    00000040
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	JAL x1, 0xFFFFFFE0
+		WR:            1
+		RD_ADDR:       1
+		WR_DATA:       00000040
+
+
+CYCLE No:			55
+	- fetch stage instr:
+		PC:            00000024
+	- decode stage instr:	LW x8, x4, 0x00000000
+	- execute stage instr:	BEQ x16, x0, 0x00000024
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       00000003
+		ABS_RES:       00000003
+	- mem stage instr:	NOP
+		ADDR_MEM:      FFFFFFE0
+		DATA_W_MEM:    00000040
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       1
+		WR_DATA:       00000040
+
+
+CYCLE No:			56
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	LW x8, x4, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       00002010
+		ABS_RES:       00002010
+	- mem stage instr:	BEQ x16, x0, 0x00000024
+		ADDR_MEM:      00000003
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFD
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       1
+		WR_DATA:       00000040
+
+
+CYCLE No:			57
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       00002010
+		ABS_RES:       00002010
+	- mem stage instr:	LW x8, x4, 0x00000000
+		ADDR_MEM:      00002010
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	BEQ x16, x0, 0x00000024
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000003
+
+
+CYCLE No:			58
+	- fetch stage instr:
+		PC:            0000002C
+	- decode stage instr:	ADDI x4, x4, 0x00000004
+	- execute stage instr:	ABS x10, x8
+		NOP_inj:       0
+		ALU_FORW1:     2
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       0000000F
+		ABS_RES:       0000000F
+	- mem stage instr:	NOP
+		ADDR_MEM:      00002010
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	LW x8, x4, 0x00000000
+		WR:            1
+		RD_ADDR:       8
+		WR_DATA:       0000000F
+
+
+CYCLE No:			59
+	- fetch stage instr:
+		PC:            00000030
+	- decode stage instr:	ADDI x16, x16, 0xFFFFFFFF
+	- execute stage instr:	ADDI x4, x4, 0x00000004
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002C
+		ALU_RES:       00002014
+		ABS_RES:       00002010
+	- mem stage instr:	ABS x10, x8
+		ADDR_MEM:      0000000F
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       8
+		WR_DATA:       00000024
+
+
+CYCLE No:			60
+	- fetch stage instr:
+		PC:            00000034
+	- decode stage instr:	SLT x11, x10, x13
+	- execute stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002B
+		ALU_RES:       00000002
+		ABS_RES:       00000003
+	- mem stage instr:	ADDI x4, x4, 0x00000004
+		ADDR_MEM:      00002014
+		DATA_W_MEM:    00002010
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	ABS x10, x8
+		WR:            1
+		RD_ADDR:       10
+		WR_DATA:       0000000F
+
+
+CYCLE No:			61
+	- fetch stage instr:
+		PC:            00000038
+	- decode stage instr:	BEQ x11, x0, 0xFFFFFFE8
+	- execute stage instr:	SLT x11, x10, x13
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000030
+		ALU_RES:       00000000
+		ABS_RES:       0000000F
+	- mem stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		ADDR_MEM:      00000002
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	ADDI x4, x4, 0x00000004
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       00002014
+
+
+CYCLE No:			62
+	- fetch stage instr:
+		PC:            0000003C
+	- decode stage instr:	ADD x13, x10, x0
+	- execute stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	SLT x11, x10, x13
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000003
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		WR:            1
+		RD_ADDR:       16
+		WR_DATA:       00000002
+
+
+CYCLE No:			63
+	- fetch stage instr:
+		PC:            0000001C
+	- decode stage instr:	JAL x1, 0xFFFFFFE0
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000038
+		ALU_RES:       0000000F
+		ABS_RES:       0000000F
+	- mem stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	SLT x11, x10, x13
+		WR:            1
+		RD_ADDR:       11
+		WR_DATA:       00000000
+
+
+CYCLE No:			64
+	- fetch stage instr:
+		PC:            00000020
+	- decode stage instr:	BEQ x16, x0, 0x00000024
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000040
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000000
+
+
+CYCLE No:			65
+	- fetch stage instr:
+		PC:            00000024
+	- decode stage instr:	LW x8, x4, 0x00000000
+	- execute stage instr:	BEQ x16, x0, 0x00000024
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       00000002
+		ABS_RES:       00000002
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			66
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	LW x8, x4, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       00002014
+		ABS_RES:       00002014
+	- mem stage instr:	BEQ x16, x0, 0x00000024
+		ADDR_MEM:      00000002
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000000F
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			67
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       00002014
+		ABS_RES:       00002014
+	- mem stage instr:	LW x8, x4, 0x00000000
+		ADDR_MEM:      00002014
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	BEQ x16, x0, 0x00000024
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000002
+
+
+CYCLE No:			68
+	- fetch stage instr:
+		PC:            0000002C
+	- decode stage instr:	ADDI x4, x4, 0x00000004
+	- execute stage instr:	ABS x10, x8
+		NOP_inj:       0
+		ALU_FORW1:     2
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       0000001B
+		ABS_RES:       0000001B
+	- mem stage instr:	NOP
+		ADDR_MEM:      00002014
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	LW x8, x4, 0x00000000
+		WR:            1
+		RD_ADDR:       8
+		WR_DATA:       0000001B
+
+
+CYCLE No:			69
+	- fetch stage instr:
+		PC:            00000030
+	- decode stage instr:	ADDI x16, x16, 0xFFFFFFFF
+	- execute stage instr:	ADDI x4, x4, 0x00000004
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002C
+		ALU_RES:       00002018
+		ABS_RES:       00002014
+	- mem stage instr:	ABS x10, x8
+		ADDR_MEM:      0000001B
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       8
+		WR_DATA:       00000024
+
+
+CYCLE No:			70
+	- fetch stage instr:
+		PC:            00000034
+	- decode stage instr:	SLT x11, x10, x13
+	- execute stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002B
+		ALU_RES:       00000001
+		ABS_RES:       00000002
+	- mem stage instr:	ADDI x4, x4, 0x00000004
+		ADDR_MEM:      00002018
+		DATA_W_MEM:    00002014
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	ABS x10, x8
+		WR:            1
+		RD_ADDR:       10
+		WR_DATA:       0000001B
+
+
+CYCLE No:			71
+	- fetch stage instr:
+		PC:            00000038
+	- decode stage instr:	BEQ x11, x0, 0xFFFFFFE8
+	- execute stage instr:	SLT x11, x10, x13
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000030
+		ALU_RES:       00000000
+		ABS_RES:       0000001B
+	- mem stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		ADDR_MEM:      00000001
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	ADDI x4, x4, 0x00000004
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       00002018
+
+
+CYCLE No:			72
+	- fetch stage instr:
+		PC:            0000003C
+	- decode stage instr:	ADD x13, x10, x0
+	- execute stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	SLT x11, x10, x13
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000003
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		WR:            1
+		RD_ADDR:       16
+		WR_DATA:       00000001
+
+
+CYCLE No:			73
+	- fetch stage instr:
+		PC:            0000001C
+	- decode stage instr:	JAL x1, 0xFFFFFFE0
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000038
+		ALU_RES:       0000001B
+		ABS_RES:       0000001B
+	- mem stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	SLT x11, x10, x13
+		WR:            1
+		RD_ADDR:       11
+		WR_DATA:       00000000
+
+
+CYCLE No:			74
+	- fetch stage instr:
+		PC:            00000020
+	- decode stage instr:	BEQ x16, x0, 0x00000024
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000040
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000000
+
+
+CYCLE No:			75
+	- fetch stage instr:
+		PC:            00000024
+	- decode stage instr:	LW x8, x4, 0x00000000
+	- execute stage instr:	BEQ x16, x0, 0x00000024
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       00000001
+		ABS_RES:       00000001
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			76
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	LW x8, x4, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       00002018
+		ABS_RES:       00002018
+	- mem stage instr:	BEQ x16, x0, 0x00000024
+		ADDR_MEM:      00000001
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    0000001B
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			77
+	- fetch stage instr:
+		PC:            00000028
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       00002018
+		ABS_RES:       00002018
+	- mem stage instr:	LW x8, x4, 0x00000000
+		ADDR_MEM:      00002018
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	BEQ x16, x0, 0x00000024
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000001
+
+
+CYCLE No:			78
+	- fetch stage instr:
+		PC:            0000002C
+	- decode stage instr:	ADDI x4, x4, 0x00000004
+	- execute stage instr:	ABS x10, x8
+		NOP_inj:       0
+		ALU_FORW1:     2
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       FFFFFFFC
+		ABS_RES:       00000004
+	- mem stage instr:	NOP
+		ADDR_MEM:      00002018
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	LW x8, x4, 0x00000000
+		WR:            1
+		RD_ADDR:       8
+		WR_DATA:       FFFFFFFC
+
+
+CYCLE No:			79
+	- fetch stage instr:
+		PC:            00000030
+	- decode stage instr:	ADDI x16, x16, 0xFFFFFFFF
+	- execute stage instr:	ADDI x4, x4, 0x00000004
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002C
+		ALU_RES:       0000201C
+		ABS_RES:       00002018
+	- mem stage instr:	ABS x10, x8
+		ADDR_MEM:      FFFFFFFC
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       8
+		WR_DATA:       00000024
+
+
+CYCLE No:			80
+	- fetch stage instr:
+		PC:            00000034
+	- decode stage instr:	SLT x11, x10, x13
+	- execute stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000002B
+		ALU_RES:       00000000
+		ABS_RES:       00000001
+	- mem stage instr:	ADDI x4, x4, 0x00000004
+		ADDR_MEM:      0000201C
+		DATA_W_MEM:    00002018
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	ABS x10, x8
+		WR:            1
+		RD_ADDR:       10
+		WR_DATA:       00000004
+
+
+CYCLE No:			81
+	- fetch stage instr:
+		PC:            00000038
+	- decode stage instr:	BEQ x11, x0, 0xFFFFFFE8
+	- execute stage instr:	SLT x11, x10, x13
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000030
+		ALU_RES:       00000000
+		ABS_RES:       00000004
+	- mem stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	ADDI x4, x4, 0x00000004
+		WR:            1
+		RD_ADDR:       4
+		WR_DATA:       0000201C
+
+
+CYCLE No:			82
+	- fetch stage instr:
+		PC:            0000003C
+	- decode stage instr:	ADD x13, x10, x0
+	- execute stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		NOP_inj:       0
+		ALU_FORW1:     1
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	SLT x11, x10, x13
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000003
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	ADDI x16, x16, 0xFFFFFFFF
+		WR:            1
+		RD_ADDR:       16
+		WR_DATA:       00000000
+
+
+CYCLE No:			83
+	- fetch stage instr:
+		PC:            0000001C
+	- decode stage instr:	JAL x1, 0xFFFFFFE0
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000038
+		ALU_RES:       00000004
+		ABS_RES:       00000004
+	- mem stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	SLT x11, x10, x13
+		WR:            1
+		RD_ADDR:       11
+		WR_DATA:       00000000
+
+
+CYCLE No:			84
+	- fetch stage instr:
+		PC:            00000020
+	- decode stage instr:	BEQ x16, x0, 0x00000024
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000001C
+		ALU_RES:       00000040
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	BEQ x11, x0, 0xFFFFFFE8
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000000
+
+
+CYCLE No:			85
+	- fetch stage instr:
+		PC:            00000024
+	- decode stage instr:	LW x8, x4, 0x00000000
+	- execute stage instr:	BEQ x16, x0, 0x00000024
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			86
+	- fetch stage instr:
+		PC:            00000040
+	- decode stage instr:	ABS x10, x8
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000020
+		ALU_RES:       0000201C
+		ABS_RES:       0000201C
+	- mem stage instr:	BEQ x16, x0, 0x00000024
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       9
+		WR_DATA:       00000038
+
+
+CYCLE No:			87
+	- fetch stage instr:
+		PC:            00000044
+	- decode stage instr:	SW x5, 0x00000000(x13)
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000024
+		ALU_RES:       FFFFFFFC
+		ABS_RES:       FFFFFFFC
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	BEQ x16, x0, 0x00000024
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000000
+
+
+CYCLE No:			88
+	- fetch stage instr:
+		PC:            00000048
+	- decode stage instr:	JAL x1, 0x00000000
+	- execute stage instr:	SW x5, 0x00000000(x13)
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000040
+		ALU_RES:       0000201C
+		ABS_RES:       0000201C
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000020
+
+
+CYCLE No:			89
+	- fetch stage instr:
+		PC:            0000004C
+	- decode stage instr:	ADDI x0, x0, 0x00000000
+	- execute stage instr:	JAL x1, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000044
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	SW x5, 0x00000000(x13)
+		ADDR_MEM:      0000201C
+		DATA_W_MEM:    00000003
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       4
+		WR_DATA:       00000020
+
+
+CYCLE No:			90
+	- fetch stage instr:
+		PC:            00000044
+	- decode stage instr:	ADDI x0, x0, 0x00000000
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000048
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	JAL x1, 0x00000000
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	SW x5, 0x00000000(x13)
+		WR:            0
+		RD_ADDR:       0
+		WR_DATA:       0000201C
+
+
+CYCLE No:			91
+	- fetch stage instr:
+		PC:            00000048
+	- decode stage instr:	JAL x1, 0x00000000
+	- execute stage instr:	NOP
+		NOP_inj:       1
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      0000004C
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	JAL x1, 0x00000000
+		WR:            1
+		RD_ADDR:       1
+		WR_DATA:       00000048
+
+
+CYCLE No:			92
+	- fetch stage instr:
+		PC:            0000004C
+	- decode stage instr:	ADDI x0, x0, 0x00000000
+	- execute stage instr:	JAL x1, 0x00000000
+		NOP_inj:       0
+		ALU_FORW1:     0
+		ALU_FORW2:     0
+		NEW_ADDR:      00000044
+		ALU_RES:       00000000
+		ABS_RES:       00000000
+	- mem stage instr:	NOP
+		ADDR_MEM:      00000000
+		DATA_W_MEM:    00000000
+		DATA_R_MEM:    FFFFFFFC
+	- wrback stage instr:	NOP
+		WR:            0
+		RD_ADDR:       1
+		WR_DATA:       00000048

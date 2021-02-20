@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : resources
+Design : RISCV_CPU_abs
+Version: O-2018.06-SP4
+Date   : Fri Jan 15 01:01:05 2021
+****************************************
+
+Resource Sharing Report for design RISCV_CPU_abs in file ../src/CU_abs.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r401     | DW_cmp       | width=5    |               | control_unit/eq_351_2 |
+          |              |            |               | control_unit/eq_356_3 |
+| r404     | DW_cmp       | width=5    |               | control_unit/eq_365_2 |
+          |              |            |               | control_unit/eq_370_3 |
+| r426     | DW_cmp       | width=5    |               | control_unit/eq_294  |
+| r428     | DW_cmp       | width=5    |               | control_unit/eq_294_2 |
+| r430     | DW_cmp       | width=5    |               | control_unit/eq_348_2 |
+| r432     | DW_cmp       | width=5    |               | control_unit/ne_350_2 |
+| r434     | DW_cmp       | width=5    |               | control_unit/eq_362_2 |
+| r436     | DW_cmp       | width=5    |               | control_unit/ne_364_2 |
+| r438     | DW01_add     | width=32   |               | data_path/fetch_stage/ADD/add_16 |
+| r440     | DW01_add     | width=32   |               | data_path/execute_stage/addr_add/add_16 |
+| r446     | DW01_add     | width=32   |               | data_path/execute_stage/alu_exec/add_27 |
+| r448     | DW_sra       | A_width=32 |               | data_path/execute_stage/alu_exec/sra_31 |
+       |            |               |                      |
+|          |              | SH_width=31 |              |                      |
+| r450     | DW_cmp       | width=32   |               | data_path/execute_stage/alu_exec/lt_32 |
+| r1034    | DW01_sub     | width=32   |               | sub_1_root_data_path/execute_stage/abs_calc/add_24_ni |
+| r1036    | DW01_inc     | width=32   |               | add_0_root_data_path/execute_stage/abs_calc/add_24_ni |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_0_root_data_path/execute_stage/abs_calc/add_24_ni      |                |
+|                    | DW01_inc         | rpl                |                |
+| data_path/fetch_stage/ADD/add_16      |                    |                |
+|                    | DW01_add         | rpl                |                |
+| data_path/execute_stage/addr_add/add_16                    |                |
+|                    | DW01_add         | rpl                |                |
+| data_path/execute_stage/alu_exec/add_27                    |                |
+|                    | DW01_add         | rpl                |                |
+| data_path/execute_stage/alu_exec/lt_32                     |                |
+|                    | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+1

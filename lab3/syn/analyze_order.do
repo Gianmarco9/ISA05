@@ -1,0 +1,16 @@
+analyze -f vhdl -lib WORK ../src/common/mypackage.vhd
+analyze -f vhdl -lib WORK ../src/common/mux21.vhd
+analyze -f vhdl -lib WORK ../src/common/mux31.vhd
+analyze -f vhdl -lib WORK ../src/common/reg.vhd
+analyze -f vhdl -lib WORK ../src/common/adder.vhd
+analyze -f vhdl -lib WORK ../src/common/registerfile.vhd
+analyze -f vhdl -lib WORK ../src/common/immGen.vhd
+analyze -f vhdl -lib WORK ../src/common/ALU.vhd
+analyze -f vhdl -lib WORK ../src/fetch.vhd
+analyze -f vhdl -lib WORK ../src/decode.vhd
+analyze -f vhdl -lib WORK ../src/execute.vhd
+analyze -f vhdl -lib WORK ../src/mem_acc.vhd
+analyze -f vhdl -lib WORK ../src/wrback.vhd
+analyze -f vhdl -lib WORK ../src/DP.vhd
+analyze -f vhdl -lib WORK ../src/CU.vhd
+analyze -f vhdl -lib WORK ../src/RISCV_CPU.vhd

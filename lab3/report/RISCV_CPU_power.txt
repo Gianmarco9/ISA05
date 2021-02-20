@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : RISCV_CPU
+Version: O-2018.06-SP4
+Date   : Sat Feb 20 16:53:33 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RISCV_CPU              5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   3.4546 mW   (92%)
+  Net Switching Power  = 302.7035 uW    (8%)
+                         ---------
+Total Dynamic Power    =   3.7574 mW  (100%)
+
+Cell Leakage Power     = 306.9293 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.4175          158.6586           28.7064          159.1048  (   3.91%)
+register       3.3829e+03           27.1842        1.3696e+05        3.5470e+03  (  87.27%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     71.4070          116.8613        1.6994e+05          358.2104  (   8.81%)
+--------------------------------------------------------------------------------------------------
+Total          3.4547e+03 uW       302.7041 uW     3.0693e+05 nW     4.0643e+03 uW
+1
